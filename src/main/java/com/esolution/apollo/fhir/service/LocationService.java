@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import ca.uhn.fhir.rest.api.MethodOutcome;
 import ca.uhn.fhir.rest.client.api.IGenericClient;
+
 @Service
 public class LocationService {
     private static final Logger logger = LoggerFactory.getLogger(LocationService.class);
