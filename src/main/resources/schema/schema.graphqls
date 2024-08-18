@@ -1,0 +1,33 @@
+type Query {
+  "Get all patients"
+  patients: [Patient!]!
+  "Get Patient by id"
+  patient(id: ID!): Patient
+  "Get all devices"
+  devices: [Device!]!
+}
+
+type Patient {
+  id: ID!
+  name: String!
+  location: Location
+  devices: [Device]
+}
+
+type Practitioner {
+  id: ID!
+  name: String!
+  patients: [Patient]
+}
+
+type Device {
+  id: ID!
+  location: Location
+}
+
+type Location {
+  id: ID!
+  name: String
+}
+
+
